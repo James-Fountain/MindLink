@@ -162,8 +162,8 @@ mindlink-platform/
 
 **克隆项目**
 ```bash
-git clone https://github.com/James-Fountain/MindLink.git
-cd mindlink-platform
+git clone git@github.com:James-Fountain/MindLink.git
+cd MindLink.git
 ```
 
 **安装后端依赖**
