@@ -4,7 +4,8 @@
 
 ## 🌐 在线体验
 
-**🚀 立即访问**: [https://ver0810.github.io/MindLink/](https://ver0810.github.io/MindLink/)
+**🚀 立即访问**: [https://james-fountain.github.io/MindLink/](https://james-fountain.github.io/MindLink/)
+
 
 ## ✨ 功能特色
 
@@ -161,7 +162,7 @@ mindlink-platform/
 
 **克隆项目**
 ```bash
-git clone https://github.com/yangyuxin-hub/mindlink-platform.git
+git clone https://github.com/James-Fountain/MindLink.git
 cd mindlink-platform
 ```
 
