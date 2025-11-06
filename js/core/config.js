@@ -21,7 +21,7 @@ const CONFIG = {
     // MODEL: 'Pro/deepseek-ai/DeepSeek-V3',
     // 写死的API KEY用于GitHub Pages部署
     // 🔥 请将下面的值替换为您的实际SiliconFlow API密钥
-    API_KEY: "sk-C66wXB9ygVSM9uBcR8Gf4kIrm0vPocMxCwYqcZiRVsTZEIbL",
+    API_KEY: "sk-ZFlgorEWpBBQGIywuQV5pY4C9erZGrCHZ7yX0QH4XrSvfc8M",
     // API_KEY: 'sk-jryyuravuqhgzkvshdwgftantltjljaanlqcxhpnxzhxybwe', // 请替换为您的实际API密钥
     MAX_TOKENS: 1000,
     TEMPERATURE: 0.7,
