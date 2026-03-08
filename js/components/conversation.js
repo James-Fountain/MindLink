@@ -708,7 +708,7 @@ function populateSuggestedQuestions(primaryMentor) {
 
     primaryMentor.suggestedQuestions.slice(0, 3).forEach(question => {
         const questionButton = UIComponents.createSuggestedQuestion(question, handleQuestionClick);
-        questionButton.className = 'text-xs bg-slate-700/80 border border-slate-600 rounded-full px-3 py-1.5 text-sky-300 hover:bg-slate-600/80 hover:border-sky-500 transition-colors focus:outline-none focus:ring-2 focus:ring-sky-500';
+        questionButton.className = 'text-xs bg-gray-100 border border-gray-300 rounded-full px-3 py-1.5 text-gray-700 hover:bg-gray-200 hover:border-gray-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400';
         container.appendChild(questionButton);
     });
 }

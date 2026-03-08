@@ -62,10 +62,10 @@ const UIComponents = {
                          class="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2 border-slate-600 flex-shrink-0 mt-1">
                     <div class="chat-bubble-mentor flex-1 rounded-2xl rounded-bl-md px-4 py-3 shadow-lg">
                         <div class="flex items-center mb-2">
-                            <span class="text-sky-400 text-xs font-medium">${mentor.name}</span>
+                            <span class="text-blue-600 text-xs font-medium">${mentor.name}</span>
                         </div>
                         <div class="prose prose-sm md:prose-base prose-slate max-w-none">
-                            <p class="text-slate-100 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0">${content}</p>
+                            <p class="text-gray-900 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0">${content}</p>
                         </div>
                     </div>
                 </div>
@@ -92,11 +92,11 @@ const UIComponents = {
                          class="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2 border-slate-600 flex-shrink-0 mt-1">
                     <div class="chat-bubble-mentor flex-1 rounded-2xl rounded-bl-md px-4 py-3 shadow-lg">
                         <div class="flex items-center mb-2">
-                            <span class="text-sky-400 text-xs font-medium">${mentor.name}</span>
+                            <span class="text-blue-600 text-xs font-medium">${mentor.name}</span>
                             ${mentor.title ? `<span class="text-slate-500 text-xs ml-2">${mentor.title}</span>` : ''}
                         </div>
                         <div class="prose prose-sm md:prose-base prose-slate max-w-none">
-                            <p class="text-slate-100 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0">${content}</p>
+                            <p class="text-gray-900 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0">${content}</p>
                         </div>
                     </div>
                 </div>
@@ -126,12 +126,12 @@ const UIComponents = {
                          class="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2 border-slate-600 flex-shrink-0 mt-1">
                     <div class="chat-bubble-mentor flex-1 rounded-2xl rounded-bl-md px-4 py-3 shadow-lg">
                         <div class="flex items-center mb-2">
-                            <span class="text-sky-400 text-xs font-medium">${mentor.name}</span>
+                            <span class="text-blue-600 text-xs font-medium">${mentor.name}</span>
                             ${mentor.title ? `<span class="text-slate-500 text-xs ml-2">${mentor.title}</span>` : ''}
                         </div>
                         <div class="prose prose-sm md:prose-base prose-slate max-w-none">
-                            <p class="text-slate-100 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0 streaming-text"></p>
-                            <span class="streaming-cursor inline-block w-0.5 h-4 bg-sky-400 ml-1 animate-pulse"></span>
+                            <p class="text-gray-900 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0 streaming-text"></p>
+                            <span class="streaming-cursor inline-block w-0.5 h-4 bg-blue-600 ml-1 animate-pulse"></span>
                         </div>
                     </div>
                 </div>
@@ -201,15 +201,15 @@ const UIComponents = {
                      class="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2 border-slate-600 flex-shrink-0 mt-1">
                 <div class="chat-bubble-mentor flex-1 rounded-2xl rounded-bl-md px-4 py-3 shadow-lg">
                     <div class="flex items-center mb-2">
-                        <span class="text-sky-400 text-xs font-medium">${mentor.name}</span>
+                        <span class="text-blue-600 text-xs font-medium">${mentor.name}</span>
                     </div>
                     <div class="flex items-center space-x-2">
                         <div class="flex space-x-1">
-                            <div class="w-2 h-2 bg-sky-400 rounded-full animate-bounce"></div>
-                            <div class="w-2 h-2 bg-sky-400 rounded-full animate-bounce" style="animation-delay: 0.15s"></div>
-                            <div class="w-2 h-2 bg-sky-400 rounded-full animate-bounce" style="animation-delay: 0.3s"></div>
+                            <div class="w-2 h-2 bg-blue-600 rounded-full animate-bounce"></div>
+                            <div class="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style="animation-delay: 0.15s"></div>
+                            <div class="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style="animation-delay: 0.3s"></div>
                         </div>
-                        <span class="text-slate-400 text-sm">正在思考...</span>
+                        <span class="text-gray-600 text-sm">正在思考...</span>
                     </div>
                 </div>
             </div>
@@ -229,11 +229,11 @@ const UIComponents = {
                      class="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2 border-slate-600 flex-shrink-0 mt-1">
                 <div class="chat-bubble-mentor flex-1 rounded-2xl rounded-bl-md px-4 py-3 shadow-lg">
                     <div class="flex items-center mb-2">
-                        <span class="text-sky-400 text-xs font-medium">${mentor.name}</span>
+                        <span class="text-blue-600 text-xs font-medium">${mentor.name}</span>
                     </div>
                     <div class="prose prose-sm md:prose-base prose-slate max-w-none">
-                        <p class="text-slate-100 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0 streaming-text"></p>
-                        <span class="streaming-cursor inline-block w-0.5 h-4 bg-sky-400 ml-1 animate-pulse"></span>
+                        <p class="text-gray-900 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0 streaming-text"></p>
+                        <span class="streaming-cursor inline-block w-0.5 h-4 bg-blue-600 ml-1 animate-pulse"></span>
                     </div>
                 </div>
             </div>
@@ -632,10 +632,10 @@ const UIComponents = {
                          class="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border-2 border-slate-600 flex-shrink-0 mt-1">
                     <div class="chat-bubble-mentor flex-1 rounded-2xl rounded-bl-md px-4 py-3 shadow-lg">
                         <div class="flex items-center mb-2">
-                            <span class="text-sky-400 text-xs font-medium">${mentor.name}</span>
+                            <span class="text-blue-600 text-xs font-medium">${mentor.name}</span>
                         </div>
                         <div class="prose prose-sm md:prose-base prose-slate max-w-none">
-                            <p class="text-slate-100 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0">${content}</p>
+                            <p class="text-gray-900 text-sm md:text-base leading-relaxed whitespace-pre-wrap m-0">${content}</p>
                         </div>
                     </div>
                 </div>
