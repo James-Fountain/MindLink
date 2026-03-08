@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     if (categoryCardsContainer) {
       categoryCardsContainer.innerHTML =
-        '<p class="text-red-400 text-center col-span-full">问题数据加载失败，请稍后再试。</p>';
+        '<p class="text-red-600 text-center col-span-full">问题数据加载失败,请稍后再试。</p>';
     }
     return;
   }
@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const backToCategoriesBtn = document.getElementById("back-to-categories");
 
   const categoryIcons = {
-    "course-review": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>`,
-    "exam-sprint": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>`,
-    "cross-discipline": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>`,
-    "cognitive-restructuring": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>`,
-    "habit-building": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>`,
-    "project-practice": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>`,
-    "learning-path": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>`,
-    "skill-test": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
+    "course-review": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>`,
+    "exam-sprint": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>`,
+    "cross-discipline": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>`,
+    "cognitive-restructuring": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>`,
+    "habit-building": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>`,
+    "project-practice": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>`,
+    "learning-path": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>`,
+    "skill-test": `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
   };
 
   function renderCategoryCards(categoriesToRender = questionCategories) {
@@ -53,16 +53,16 @@ document.addEventListener("DOMContentLoaded", function () {
         "category-card cool-card cool-card-hover p-6 text-center cursor-pointer";
       card.setAttribute("data-category", category.id);
       card.innerHTML = `
-                <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-5 mx-auto bg-slate-700/50">
+                <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-5 mx-auto bg-gray-100">
                     ${
                       categoryIcons[category.id] ||
-                      '<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
+                      '<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
                     }
                 </div>
-                <h3 class="text-lg font-semibold text-slate-100 mb-2">${
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">${
                   category.name
                 }</h3>
-                <p class="text-xs text-slate-400 line-clamp-2">${category.recommendedQuestions
+                <p class="text-xs text-gray-600 line-clamp-2">${category.recommendedQuestions
                   .map((q) => q.title.substring(0, 15))
                   .join(", ")}...</p>
             `;
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
       : category.recommendedQuestions;
 
     if (questionsToDisplay.length === 0) {
-      questionList.innerHTML = `<p class="text-slate-400 text-center col-span-full py-8">在此分类下没有找到匹配的问题。</p>`;
+      questionList.innerHTML = `<p class="text-gray-600 text-center col-span-full py-8">在此分类下没有找到匹配的问题。</p>`;
     } else {
       questionsToDisplay.forEach((question) => {
         const questionCard = document.createElement("div");
@@ -114,10 +114,10 @@ document.addEventListener("DOMContentLoaded", function () {
           "cool-card cool-card-hover p-5 md:p-6 cursor-pointer";
         questionCard.setAttribute("data-question-id", question.id);
         questionCard.innerHTML = `
-                    <h4 class="font-semibold text-lg text-slate-100 mb-2">${
+                    <h4 class="font-semibold text-lg text-gray-900 mb-2">${
                       question.title
                     }</h4>
-                    <p class="text-slate-400 text-sm mb-4 line-clamp-2">${
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-2">${
                       question.shortDescription
                     }</p>
                     <div class="flex justify-between items-center">
@@ -125,11 +125,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             ${(question.tags || [])
                               .map(
                                 (tag) =>
-                                  `<span class="inline-block bg-slate-700 text-sky-300 text-xs px-2.5 py-1 rounded-full">${tag}</span>`
+                                  `<span class="inline-block bg-gray-100 text-gray-700 text-xs px-2.5 py-1 rounded-full border border-gray-200">${tag}</span>`
                               )
                               .join("")}
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                     </div>
                 `;
         questionCard.addEventListener("click", () =>
@@ -222,14 +222,14 @@ document.addEventListener("DOMContentLoaded", function () {
     mentors.forEach((mentor) => {
       const mentorCard = document.createElement("div");
       mentorCard.className =
-        "mentor-card group relative overflow-hidden bg-gradient-to-br from-slate-800/60 to-slate-800/40 backdrop-blur-md border border-slate-700/50 rounded-2xl p-5 cursor-pointer transition-all duration-300 ease-out hover:shadow-2xl hover:shadow-sky-500/10 hover:border-sky-500/30 hover:-translate-y-1";
+        "mentor-card group relative overflow-hidden bg-white border border-gray-200 rounded-2xl p-5 cursor-pointer transition-all duration-300 ease-out hover:shadow-lg hover:border-gray-300 hover:-translate-y-1";
       mentorCard.setAttribute("data-mentor-id", mentor.id);
 
       const isRecommended = question.recommendedMentors.includes(mentor.id);
       mentorCard.innerHTML = `
                 <div class="flex items-start space-x-4">
                     <div class="relative">
-                        <div class="w-14 h-14 rounded-2xl overflow-hidden border-2 border-slate-600/50 group-hover:border-sky-400/50 transition-colors duration-300">
+                        <div class="w-14 h-14 rounded-2xl overflow-hidden border-2 border-gray-200 group-hover:border-gray-300 transition-colors duration-300">
                             <img src="${mentor.avatar}" alt="${
         mentor.name
       }" class="w-full h-full object-cover">
@@ -242,16 +242,16 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="flex-1 min-w-0">
                         <div class="flex items-start justify-between mb-2">
-                            <h5 class="font-bold text-slate-100 text-base leading-tight">${
+                            <h5 class="font-bold text-gray-900 text-base leading-tight">${
                               mentor.name
                             }</h5>
                             <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-sm text-slate-400 mb-3 leading-relaxed">${
+                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">${
                           mentor.title
                         }</p>
                         <div class="flex flex-wrap gap-2">
@@ -259,13 +259,13 @@ document.addEventListener("DOMContentLoaded", function () {
                               .slice(0, 3)
                               .map(
                                 (skill) =>
-                                  `<span class="inline-block text-xs bg-gradient-to-r from-sky-500/20 to-purple-500/20 text-sky-300 px-2 py-1 rounded-lg border border-sky-500/20 backdrop-blur-sm">${skill}</span>`
+                                  `<span class="inline-block text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-lg border border-gray-200">${skill}</span>`
                               )
                               .join("")}
                         </div>
                     </div>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-r from-sky-500/0 via-sky-500/0 to-sky-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-50/0 via-gray-50/0 to-gray-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
             `;
 
       mentorCard.addEventListener("click", () => {
@@ -292,27 +292,25 @@ document.addEventListener("DOMContentLoaded", function () {
   function selectMentor(mentor, mentorCard) {
     // Remove previous selection
     document.querySelectorAll(".mentor-card").forEach((card) => {
-      card.classList.remove("ring-2", "ring-sky-400", "bg-gradient-to-br");
-      card.classList.add("border-slate-700/50");
+      card.classList.remove("ring-2", "ring-gray-400", "bg-gray-50");
+      card.classList.add("border-gray-200");
       // Remove selected indicator
       const indicator = card.querySelector(".selected-indicator");
       if (indicator) indicator.remove();
     });
 
     // Add selection to current card
-    mentorCard.classList.remove("border-slate-700/50");
+    mentorCard.classList.remove("border-gray-200");
     mentorCard.classList.add(
       "ring-2",
-      "ring-sky-400",
-      "bg-gradient-to-br",
-      "from-sky-500/10",
-      "to-purple-500/5"
+      "ring-gray-400",
+      "bg-gray-50"
     );
 
     // Add selected indicator
     const indicator = document.createElement("div");
     indicator.className =
-      "selected-indicator absolute top-3 right-3 w-6 h-6 bg-gradient-to-r from-sky-400 to-sky-500 rounded-full flex items-center justify-center shadow-lg";
+      "selected-indicator absolute top-3 right-3 w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center shadow-lg";
     indicator.innerHTML =
       '<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>';
     mentorCard.appendChild(indicator);
@@ -332,30 +330,26 @@ document.addEventListener("DOMContentLoaded", function () {
       selectedMentorsForQuestion.splice(mentorIndex, 1);
       mentorCard.classList.remove(
         "ring-2",
-        "ring-sky-400",
-        "bg-gradient-to-br",
-        "from-sky-500/10",
-        "to-purple-500/5"
+        "ring-gray-400",
+        "bg-gray-50"
       );
-      mentorCard.classList.add("border-slate-700/50");
+      mentorCard.classList.add("border-gray-200");
       const indicator = mentorCard.querySelector(".selected-indicator");
       if (indicator) indicator.remove();
     } else {
       // Add mentor to selection
       selectedMentorsForQuestion.push(mentor);
-      mentorCard.classList.remove("border-slate-700/50");
+      mentorCard.classList.remove("border-gray-200");
       mentorCard.classList.add(
         "ring-2",
-        "ring-sky-400",
-        "bg-gradient-to-br",
-        "from-sky-500/10",
-        "to-purple-500/5"
+        "ring-gray-400",
+        "bg-gray-50"
       );
 
       // Add selected indicator
       const indicator = document.createElement("div");
       indicator.className =
-        "selected-indicator absolute top-3 right-3 w-6 h-6 bg-gradient-to-r from-sky-400 to-sky-500 rounded-full flex items-center justify-center shadow-lg";
+        "selected-indicator absolute top-3 right-3 w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center shadow-lg";
       indicator.innerHTML =
         '<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>';
       mentorCard.appendChild(indicator);
@@ -375,19 +369,17 @@ document.addEventListener("DOMContentLoaded", function () {
       );
 
       if (isSelected) {
-        card.classList.remove("border-slate-700/50");
+        card.classList.remove("border-gray-200");
         card.classList.add(
           "ring-2",
-          "ring-sky-400",
-          "bg-gradient-to-br",
-          "from-sky-500/10",
-          "to-purple-500/5"
+          "ring-gray-400",
+          "bg-gray-50"
         );
 
         if (!card.querySelector(".selected-indicator")) {
           const indicator = document.createElement("div");
           indicator.className =
-            "selected-indicator absolute top-3 right-3 w-6 h-6 bg-gradient-to-r from-sky-400 to-sky-500 rounded-full flex items-center justify-center shadow-lg";
+            "selected-indicator absolute top-3 right-3 w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center shadow-lg";
           indicator.innerHTML =
             '<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>';
           card.appendChild(indicator);
@@ -395,12 +387,10 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         card.classList.remove(
           "ring-2",
-          "ring-sky-400",
-          "bg-gradient-to-br",
-          "from-sky-500/10",
-          "to-purple-500/5"
+          "ring-gray-400",
+          "bg-gray-50"
         );
-        card.classList.add("border-slate-700/50");
+        card.classList.add("border-gray-200");
         const indicator = card.querySelector(".selected-indicator");
         if (indicator) indicator.remove();
       }
@@ -547,14 +537,14 @@ document.addEventListener("DOMContentLoaded", function () {
           questionCard.setAttribute("data-question-id", question.id);
           questionCard.innerHTML = `
                         <div class="flex justify-between items-start mb-2">
-                            <h4 class="font-semibold text-lg text-slate-100">${
+                            <h4 class="font-semibold text-lg text-gray-900">${
                               question.title
                             }</h4>
-                            <span class="text-xs text-sky-400 bg-slate-700 px-2 py-1 rounded-full">${
+                            <span class="text-xs text-gray-700 bg-gray-100 px-2 py-1 rounded-full border border-gray-200">${
                               question.categoryName
                             }</span>
                         </div>
-                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">${
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">${
                           question.shortDescription
                         }</p>
                         <div class="flex justify-between items-center">
@@ -562,11 +552,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 ${(question.tags || [])
                                   .map(
                                     (tag) =>
-                                      `<span class="inline-block bg-slate-700 text-sky-300 text-xs px-2.5 py-1 rounded-full">${tag}</span>`
+                                      `<span class="inline-block bg-gray-100 text-gray-700 text-xs px-2.5 py-1 rounded-full border border-gray-200">${tag}</span>`
                                   )
                                   .join("")}
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                         </div>
                     `;
           questionCard.addEventListener("click", () =>
@@ -578,7 +568,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questionListSection.classList.remove("hidden");
       } else {
         selectedCategoryTitle.textContent = `搜索 "${searchTerm}" 的结果`;
-        questionList.innerHTML = `<p class="text-slate-400 text-center col-span-full py-8">未能找到与 "${searchTerm}" 相关的问题。</p>`;
+        questionList.innerHTML = `<p class="text-gray-600 text-center col-span-full py-8">未能找到与 "${searchTerm}" 相关的问题。</p>`;
         categoryView.classList.add("hidden");
         questionListSection.classList.remove("hidden");
       }
