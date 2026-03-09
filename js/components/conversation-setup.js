@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         initialMentorInfoDiv.innerHTML = `
             <img src="${mentor.avatar}" alt="${mentor.name}" class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-slate-600 shadow-md">
             <div>
-                <h3 class="text-xl md:text-2xl font-semibold text-slate-100">${mentor.name}</h3>
+                <h3 class="text-xl md:text-2xl font-semibold text-gray-900">${mentor.name}</h3>
                 <p class="text-sm text-sky-400">${mentor.title}</p>
             </div>
         `;
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <input type="checkbox" class="form-checkbox h-5 w-5 text-sky-500 bg-slate-600 border-slate-500 rounded focus:ring-sky-400 focus:ring-offset-slate-800 mr-4" data-mentor-id="${mentor.id}" ${isSelected ? 'checked' : ''} ${!canSelectMore && !isSelected ? 'disabled' : ''}>
                 <img src="${mentor.avatar}" alt="${mentor.name}" class="w-10 h-10 rounded-full object-cover mr-3 border border-slate-600">
                 <div>
-                    <span class="text-slate-100 font-medium">${mentor.name}</span>
+                    <span class="text-gray-900 font-medium">${mentor.name}</span>
                     <p class="text-xs text-slate-400">${mentor.title}</p>
                 </div>
             `;
