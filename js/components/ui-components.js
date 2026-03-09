@@ -52,7 +52,7 @@ const UIComponents = {
         if (isUser) {
             messageDiv.innerHTML = `
                 <div class="chat-bubble-user max-w-[85%] lg:max-w-[75%] rounded-2xl rounded-br-md px-4 py-3 shadow-lg">
-                    <p class="text-white text-sm md:text-base leading-relaxed whitespace-pre-wrap">${content}</p>
+                    <p class="text-gray-900 text-sm md:text-base leading-relaxed whitespace-pre-wrap">${content}</p>
                 </div>
             `;
         } else {
@@ -622,7 +622,7 @@ const UIComponents = {
             messageDiv.innerHTML = `
                 <div class="chat-bubble-user max-w-[85%] lg:max-w-[75%] rounded-2xl rounded-br-md px-4 py-3 shadow-lg">
                     ${attachments.length > 0 ? this.createAttachmentList(attachments, true) : ''}
-                    ${content ? `<p class="text-white text-sm md:text-base leading-relaxed whitespace-pre-wrap${attachments.length > 0 ? ' mt-2' : ''}">${content}</p>` : ''}
+                    ${content ? `<p class="text-gray-900 text-sm md:text-base leading-relaxed whitespace-pre-wrap${attachments.length > 0 ? ' mt-2' : ''}">${content}</p>` : ''}
                 </div>
             `;
         } else {

@@ -302,7 +302,7 @@ input[type="text"].dark-input {
 }
 
 .chat-bubble-user {
-    @apply bg-gradient-to-br from-sky-500 to-sky-600 text-white shadow-md;
+    @apply bg-gradient-to-br from-sky-500 to-sky-600 text-gray-900 shadow-md;
 }
 
 .chat-bubble-mentor {

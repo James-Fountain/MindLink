@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <img src="${mentor.avatar}" alt="${
       mentor.name
     }" class="w-24 h-24 rounded-full object-cover mb-4 border-2 border-slate-600 shadow-lg">
-            <h4 class="font-semibold text-xl text-slate-100 mb-1">${
+            <h4 class="font-semibold text-xl text-gray-900 mb-1">${
               mentor.name
             }</h4>
             <p class="text-sm text-sky-400 mb-3">${mentor.title}</p>
